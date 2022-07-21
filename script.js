@@ -11,7 +11,7 @@ function generatePassword() {
     return;
 }  
   
-var useUpper = window.confirm("Use Uppercase?");
+  var useUpper = window.confirm("Use Uppercase?");
   var useLower = window.confirm("Use Lowercase?");
   var useSpecial = window.confirm("Use special characters?");
   var useNumber = window.confirm("Use Numbers?");
@@ -23,27 +23,39 @@ var useUpper = window.confirm("Use Uppercase?");
 
 
  if (useUpper === true) {
-    choices.push(upperChars);
+    choices.concat(useUpper);
+    choices=choices.concat(useUpper);
+
 } if (useLower === true) {
-    choices.push(lowerChars);
+    choices.concat(useUpper);
+    choices=choices.concat(useUpper);
+
 } if (useSpecial === true) {
-    choices.push(specialChars);
+    choices.concat(useUpper);
+    choices=choices.concat(useUpper);
+
 } if (useNumber === true) {
-    choices.push(numChars);
+    choices.concat(useUpper);
+    choices=choices.concat(useUpper);
 }; 
 console.log(choices);
+
+//for (var i=0; 1<passLength, i++) {
+//result=result+choices[Math.floor(Math.random()*choices.Length)];
 
     return password;
 };
 
+//for (var i=0; 1<passLength, i++) {
+//result=result+choices[Math.floor(Math.random()*choices.Length)];
+//}
 
 //var password = Math.floor(Math.random() * options.length);
  
 
 
-//concat(passLength, useUpper, useLower, useSpecial, useNumber);
 
-  //return password;
+
 
 
 
