@@ -23,28 +23,30 @@ function generatePassword() {
 
 
  if (useUpper === true) {
-    choices.concat(useUpper);
-    choices=choices.concat(useUpper);
+    choices.concat(upperChars);
+    choices=choices.concat(upperChars);
 
 } if (useLower === true) {
-    choices.concat(useUpper);
-    choices=choices.concat(useUpper);
+    choices.concat(lowerChars);
+    choices=choices.concat(lowerChars);
 
 } if (useSpecial === true) {
-    choices.concat(useUpper);
-    choices=choices.concat(useUpper);
+    choices.concat(specialChars);
+    choices=choices.concat(specialChars);
 
 } if (useNumber === true) {
-    choices.concat(useUpper);
-    choices=choices.concat(useUpper);
+    choices.concat(numChars);
+    choices=choices.concat(numChars);
 }; 
 console.log(choices);
 
-//for (var i=0; 1<passLength, i++) {
-//result=result+choices[Math.floor(Math.random()*choices.Length)];
+for (var i=0; i<passLength; i++) {
+var element= Math.floor(Math.random()*choices.length);
 
-    return password;
+password=password+choices[element];
 };
+    return password;
+}
 
 //for (var i=0; 1<passLength, i++) {
 //result=result+choices[Math.floor(Math.random()*choices.Length)];
